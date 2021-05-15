@@ -1,2 +1,11 @@
-<h1>Recipes#new</h1>
-<p>Find me in app/views/recipes/new.html.erb</p>
+<%= render 'error', recipe: @recipe %>
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-6 mx-auto">
+    <h2>新規投稿</h2>
+    <%= render 'form', recipe: @recipe%>
+      
+    </div>
+  </div>
+</div>
